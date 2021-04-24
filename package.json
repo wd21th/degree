@@ -1,0 +1,64 @@
+{
+	"name": "degree",
+	"displayName": "Degree",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"publisher": "DiasBakahbay",
+	"icon": "img/icon.jpg",
+	"author": {
+		"name": "Dias Bakashbay"
+	},
+	"keywords": [
+		"Degree",
+		"Factor",
+		"Number",
+		"javascript",
+		"Js"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:degree.expandNumber",
+		"onCommand:degree.toExponential"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "degree.expandNumber",
+				"category": "Degree",
+				"title": "Expand Number"
+			},
+			{
+				"command": "degree.toExponential",
+				"category": "Degree",
+				"title": "To Exponential"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.55.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"__metadata": {
+		"id": "f59dccdd-9e5c-4c49-8c5e-a8877b628409",
+		"publisherDisplayName": "Dias Bakahbay",
+		"publisherId": "e2bc1f31-ffe9-4fdd-b653-a2cdb6b9cded"
+	}
+}
